@@ -41,17 +41,19 @@ sudo apt-get install cmake libvtk5-dev python-vtk python-sip python-qt4 libosmes
 pip install numpy scipy scikit-learn scikit-image opencv-python pyassimp tensorflow-gpu==1.15.0 h5py mayavi matplotlib catkin_pkg multiprocess dill cvxopt ipython pillow pyhull setproctitle trimesh
 
 # install deps from source
-mkdir deps
+# mkdir deps
 cd deps
 
+## Several of the git clone have been commented because all these repos will be automatically clone once you clone dexnet.
+
 # install SDFGen
-git clone https://github.com/jeffmahler/SDFGen.git
+# git clone https://github.com/jeffmahler/SDFGen.git
 cd SDFGen
 sudo sh install.sh
 cd ..
 
 # install Boost.NumPy
-git clone https://github.com/jeffmahler/Boost.NumPy.git
+# git clone https://github.com/jeffmahler/Boost.NumPy.git
 cd Boost.NumPy
 sudo sh install.sh
 cd ..
@@ -61,11 +63,11 @@ cd ..
 
 # install autolab modules
 cd ${MODULES_DIR}
-git clone https://github.com/BerkeleyAutomation/autolab_core.git
-git clone -b 0.0.9 https://github.com/BerkeleyAutomation/perception.git
-git clone https://github.com/BerkeleyAutomation/gqcnn.git
-git clone https://github.com/BerkeleyAutomation/meshpy.git
-git clone https://github.com/BerkeleyAutomation/visualization.git
+# git clone https://github.com/BerkeleyAutomation/autolab_core.git
+# git clone -b 0.0.9 https://github.com/BerkeleyAutomation/perception.git
+# git clone https://github.com/BerkeleyAutomation/gqcnn.git
+# git clone https://github.com/BerkeleyAutomation/meshpy.git
+# git clone https://github.com/BerkeleyAutomation/visualization.git
 
 # install meshpy
 cd meshpy
