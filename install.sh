@@ -62,7 +62,7 @@ cd ..
 # install autolab modules
 cd ${MODULES_DIR}
 git clone https://github.com/BerkeleyAutomation/autolab_core.git
-git clone https://github.com/BerkeleyAutomation/perception.git
+git clone -b 0.0.9 https://github.com/BerkeleyAutomation/perception.git
 git clone https://github.com/BerkeleyAutomation/gqcnn.git
 git clone https://github.com/BerkeleyAutomation/meshpy.git
 git clone https://github.com/BerkeleyAutomation/visualization.git
